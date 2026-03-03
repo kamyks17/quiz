@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_index.css">
+    <title>Siema</title>
+</head>
+<body>
+    <button class='glowing-btn' onclick="hideButton()"><span class='glowing-txt'>S<span class='faulty-letter'>T</span>ART</span></button>
+
+    <script>
+        function hideButton() {
+            var button = document.querySelector('.glowing-btn');
+            button.classList.add('hide');
+            setTimeout(function() {
+                button.style.display = 'none';
+                setTimeout(function() {
+                    window.location.href = 'quiz.html';
+                }, 1500);
+            }, 200);
+        }
+    </script>
+</body>
+</html>

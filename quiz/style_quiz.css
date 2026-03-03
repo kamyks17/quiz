@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: hsl(186 100% 69%);
+      background-color: black;
+    }
+
+    .container {
+      width: 600px;
+      padding: 10px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 150px;
+      margin-top: -120px;
+      color: hsl(186, 100%, 69%);
+      font-size: 60px;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .options {
+      margin-bottom: 20px;
+    }
+
+    .option {
+      display: block;
+      margin-bottom: 10px;
+      border: 2px solid hsl(186, 100%, 69%);
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: background-color 0.3s; 
+    }
+
+    .option:hover {
+      background-color: hsl(186, 65%, 25%);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s; 
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background-color: hsl(186, 100%, 69%);
+      color: black;
+    }
+
+    .retryButton,
+    .showAnswerButton {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .button.show {
+      display: inline-block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    #retry,
+    #showAnswer {
+      background-color: hsl(186, 100%, 69%);
+      color: black;
+      margin-top: 30px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #retry:hover,
+    #showAnswer:hover {
+      background-color: hsl(186, 100%, 49%);
+    }
+
+    .result {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .hide {
+      display: none;
+    }
